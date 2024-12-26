@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdc-ac</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- TYPOGRAPHY -->
+    <div class="container">
+        <!-- TYPO EXAMPLE 1: Basic headings in Bootstrap. The nice thing about these is that
+        they are also responsive.
+        -->
+        <div class="row border my-3">
+            <h1>h1. Real Bootstrap heading</h1>
+            <h2>h2. Real Bootstrap heading</h2>
+            <h3>h3. Real Bootstrap heading</h3>
+            <h4>h4. Real Bootstrap heading</h4>
+            <h5>h5. Real Bootstrap heading</h5>
+            <h6>h6. Real Bootstrap heading</h6>
+        </div>
+
+        <!-- TYPO EXAMPLE 1.5: Bootstrap allows you to style paragraphs like 
+        headings. This is useful for situations in which you might not actually want to
+        use a heading element.
+        -->
+        <div class="row border my-3">
+            <p class="h1">h1. Paragraph Bootstrap heading</p>
+            <p class="h2">h2. Paragraph Bootstrap heading</p>
+            <p class="h3">h3. Paragraph Bootstrap heading</p>
+            <p class="h4">h4. Paragraph Bootstrap heading</p>
+            <p class="h5">h5. Paragraph Bootstrap heading</p>
+            <p class="h6">h6. Paragraph Bootstrap heading</p>
+        </div>
+
+        <!-- TYPO EXAMPLE 2: Bootstrap also defines display headings, which use a different look -->
+        <div class="row border my-3">
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+            <h1 class="display-5">Display 5</h1>
+            <h1 class="display-6">Display 6</h1>
+        </div>
+
+        <!-- TYPO EXAMPLE 3: Basic inline styling -->
+        <div class="row border my-3">
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            <p><u>This line of text will render as underlined.</u></p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+        </div>
+
+        <!-- TYPO EXAMPLE 3.5: Some tags, however, should be used for semantic purposes
+            <mark> represents text which is marked or highlighted for reference or notation purposes.
+            <small> represents side-comments and small print, like copyright and legal text.
+            <s> represents element that are no longer relevant or no longer accurate.
+            <u> represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation.  
+                
+        To achieve the same look without using these tags, use <p> classes instead.
+        -->
+        <div class="row border my-3">
+            <p>You can use the mark tag to <p class="mark">highlight</p> text.</p>
+            <p class="small">This line of text is meant to be treated as fine print.</p>
+            <p class="text-decoration-line-through">This line of text is meant to be treated as no longer accurate.</p>
+            <p class="text-decoration-underline">This line of text will render as underlined.</p>
+        </div>
+
+        <!-- TYPO EXAMPLE 4: Block quotes in Bootstrap -->
+        <div class="row border my-3">
+            <blockquote class="blockquote">
+                <p>A well-known quote, contained in a blockquote element.</p>
+            </blockquote>
+        </div>
+
+        <!-- TYPO EXAMPLE 4.5: Block quotes with sources
+        Note the use of the "text-center" class to center the text of the whole blockquote
+        Alternatively, use "text-end" to right-align (as in languages or texts read right-to-left)
+        -->
+        <div class="row border my-3">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+        </div>
+
+        <!-- TYPO EXAMPLE 5: Making unstyled lists in Bootstrap (Primary list items are not dotted) -->
+        <div class="row border my-3">
+            <ul class="list-unstyled">
+                <li>Line #1</li>
+                <li>Line #2</li>
+                <li>Line #3</li>
+                <li>Line #4</li>
+                <li>Line #5</li>
+                <ul>
+                    <li>As you can see,</li>
+                    <li>with nested lists, the</li>
+                    <li>dotting is unaffected. Unstyling</li>
+                    <li>lists only applies to the</li>
+                    <li>immediate children on the list.</li>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- TYPO EXAMPLE 6: Inline lists -->
+        <div class="row border my-3">
+            <ul class="list-inline">
+                <li class="list-inline-item border">This is a list item.</li>
+                <li class="list-inline-item border">And another one.</li>
+                <li class="list-inline-item border">But they're displayed inline.</li>
+            </ul>
+        </div>
+
+        <!-- More information about typography can be found in the documentation -->
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

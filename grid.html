@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdc-ac</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        [class*=col] {
+            padding: 1rem;
+            background-color: #33b5e5;
+            border: 2px solid white;
+            color: bisque;
+        }
+
+        .child {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <!-- BOOTSTRAP GRID -->
+    <!-- GRID EXAMPLE 1: Use "col" to make a column, 
+    and "row" to make a row inside a "container" div 
+    -->
+    <div class="container borderm my-2">
+        <div class="row">
+            <div class="col">Vinni.works</div>
+            <div class="col">3 BS CS 2026</div>
+        </div>
+    </div>
+
+    <!-- GRID EXAMPLE 2: Bootstrap ALWAYS uses 12 divisions 
+    Having total partition count past 12 will make the column wrap around
+    -->
+    <div class="container border my-2">
+        <div class="row">
+            <div class="col-5">Vinni.works</div>
+            <div class="col-8">3 BS CS 2026</div>
+        </div>
+    </div>
+
+    <!-- GRID EXAMPLE 3: Making columns as in EX2 might not be very flexible
+    Instead, specify BOTH breakpoint and partition so that it resizes automatically
+    -->
+    <div class="container border my-2">
+        <div class="row">
+            <div class="col-md-4">Vinni.works</div>
+            <div class="col-md-8">3 BS CS 2026</div>
+        </div>
+    </div>
+
+    <!-- GRID EXAMPLE 3.5: Can specify multiple use cases.
+    Possible to specify cases for ALL breakpoints.
+    -->
+    <div class="container border my-2">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">Vinni.works</div>
+            <div class="col-lg-8 col-md-6">3 BS CS 2026</div>
+        </div>
+    </div>
+    
+    <!-- GRID EXAMPLE 4: In-container alignment: "align-items-start/center/end" -->
+    <div class="container border my-2">
+        <div class="row align-items-center" style="height: 250px;">
+            <div class="col-lg-4 col-md-6">Vinni.works</div>
+            <div class="col-lg-8 col-md-6">3 BS CS 2026</div>
+        </div>
+    </div>
+
+    <!-- GRID EXAMPLE 5: Justifying content: "justify-content-start/center/x" 
+    Where x is an element in the set: {"start", "center", "end", "around", "between", "evenly"}
+    -->
+    <div class="container border my-2">
+        <div class="row justify-content-evenly">
+            <div class="col-2">One</div>
+            <div class="col-2">Two</div>
+        </div>
+    </div>
+
+    <!-- GRID EXAMPLE 6: Gutters define the padding between columns 
+    g-n defines a gutter
+    gx-n defines padding bet. a column and a row
+    gy-n defines padding bet. columns
+    let n be any positive integer
+    -->
+    <!-- GRID EXAMPLE 7: Use mx for left-right margins, and my for top-bottom margins -->
+    <div class="container border my-2">
+        <div class="row gx-2 gy-3">
+            <div class="col-6"><div class="child">One</div></div>
+            <div class="col-6"><div class="child">Two</div></div>
+            <div class="col-6"><div class="child">Three</div></div>
+            <div class="col-6"><div class="child">Four</div></div>
+        </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
