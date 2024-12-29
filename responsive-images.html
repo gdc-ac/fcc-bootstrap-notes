@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdc-ac</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- RESPONSIVE IMAGES -->
+    <!-- RES-IMG EXAMPLE 1: Use the img-fluid class to make images responsive to their containers -->
+    <div style="width: 25%; border: 5px red solid;">
+        <img src="https://picsum.photos/800" class="img-fluid">
+    </div>
+
+    <div class="container border my-5">
+        <!-- RES-IMG EXAMPLE 2: Making a thumbnail (image with rounded border) -->
+        <div style="width: 25%;">
+            <img src="https://picsum.photos/800" class="img-thumbnail">
+        </div>
+        <h1 class="my-5">Thumbnail</h1>
+    </div>
+
+    <!-- RES-IMG EXAMPLE 3: Use a clearfix div so that text doesn't float around an image -->
+    <div class="container border my-5">
+        <img src="https://picsum.photos/800" class="float-end w-25">
+        <div class="clearfix"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos laborum unde iusto tempora dignissimos molestias aperiam, vitae maiores adipisci? Autem mollitia harum pariatur ab voluptatum illum enim. Iusto harum quod repudiandae tempore amet cupiditate temporibus doloribus totam deserunt, accusantium, in consequatur? Ex laborum mollitia excepturi deleniti, esse eligendi quos eum!</p>
+    </div>
+
+    <!-- RES-IMG EXAMPLE 4: Centering an image -->
+    <div class="container border my-5">
+        <img src="https://picsum.photos/800" class="d-block mx-auto w-25">
+        <div class="clearfix"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos laborum unde iusto tempora dignissimos molestias aperiam, vitae maiores adipisci? Autem mollitia harum pariatur ab voluptatum illum enim. Iusto harum quod repudiandae tempore amet cupiditate temporibus doloribus totam deserunt, accusantium, in consequatur? Ex laborum mollitia excepturi deleniti, esse eligendi quos eum!</p>
+    </div>
+
+    <!-- RES-IMG EXAMPLE 5: Use the rounded class to give images rounded edges -->
+    <div class="container border my-5">
+        <img src="https://picsum.photos/800" class="d-block mx-auto w-25 rounded">
+        <div class="clearfix"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos laborum unde iusto tempora dignissimos molestias aperiam, vitae maiores adipisci? Autem mollitia harum pariatur ab voluptatum illum enim. Iusto harum quod repudiandae tempore amet cupiditate temporibus doloribus totam deserunt, accusantium, in consequatur? Ex laborum mollitia excepturi deleniti, esse eligendi quos eum!</p>
+    </div>
+    
+    <!-- More information about <topic> can be found in the documentation -->
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
