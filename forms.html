@@ -7,13 +7,44 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <!-- TOPIC -->
+    <!-- FORMS -->
     <div class="container border">
-        <!-- TOPIC EXAMPLE 1: Text goes here -->
-        Hello World
+        <!-- FORMS EXAMPLE 1: Sample form -->
+        <div class="text-center my-4">
+            <h2>Get in touch</h2>
+            <p class="lead">Don't hesitate to contact us!</p>
+        </div>
+        <div class="row justify-content-center my-4">
+            <div class="col-lg-6">
+                <form action="">
+                    <div class="form-floating my-4">
+                        <input type="email" id="email" placeholder="email@website.com" class="form-control">
+                        <label for="email" class="form-label">Email:</label>
+                    </div>
+                    <div class="form-floating my-4">
+                        <input type="name" id="name" placeholder="Juan Dela Cruz" class="form-control">
+                        <label for="name" class="form-label">Name:</label>
+                    </div>
+                    <label for="subject" class="form-label">Subject:</label>
+                    <select name="subject" id="subject" class="form-select" selected="default">
+                        <option value="default">Default</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="form-floating my-4">
+                        <textarea name="query" id="query" style="height: 200px;" class="form-control" placeholder="Message goes here."></textarea>
+                        <label for="query">Message:</label>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     
-    <!-- More information about <topic> can be found in the documentation -->
+    <!-- More information about forms can be found in the documentation -->
     </div>
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
