@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gdc-ac</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- LET'S BUILD A WEBPAGE! -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Other</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="my-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="https://picsum.photos/600/400" alt="Lorem Picsum" class="img-fluid rounded">
+                </div>
+                <div class="col-md-5">
+                    <h1>Hello World</h1>
+                    <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde distinctio qui voluptates dolorem rerum voluptatem ipsum similique, quibusdam blanditiis nostrum?</p>
+                    <button type="button" class="btn btn-primary mt-2">Action Button</button>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <div class="bg-secondary text-light my-4 py-2 card text-center">
+                        <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eaque.</div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group mx-5">
+            <div class="card text-light bg-secondary">
+                <img src="https://picsum.photos/200" class="card-img-top" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, debitis.</p>
+                    <div class="text-center"><button class="btn btn-primary">Click me!</button></div>
+                </div>
+            </div>
+            <!-- CARD GROUP EXAMPLE 6: Styling text and background -->
+            <div class="card text-light bg-secondary">
+                <img src="https://picsum.photos/200" class="card-img-top" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, debitis.</p>
+                    <div class="text-center"><button class="btn btn-primary">Click me!</button></div>
+                </div>
+            </div>
+            <div class="card text-light bg-secondary">
+                <img src="https://picsum.photos/200" class="card-img-top" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, debitis.</p>
+                    <div class="text-center"><button class="btn btn-primary">Click me!</button></div>
+                </div>
+            </div>
+            <div class="card text-light bg-secondary">
+                <img src="https://picsum.photos/200" class="card-img-top" height="200">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, debitis.</p>
+                    <div class="text-center"><button class="btn btn-primary">Click me!</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <!-- FORMS EXAMPLE 1: Sample form -->
+            <div class="text-center my-4">
+                <h2>Get in touch</h2>
+                <p class="lead">Don't hesitate to contact us!</p>
+            </div>
+            <div class="row justify-content-center my-4">
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="form-floating my-4">
+                            <input type="email" id="email" placeholder="email@website.com" class="form-control">
+                            <label for="email" class="form-label">Email:</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="name" id="name" placeholder="Juan Dela Cruz" class="form-control">
+                            <label for="name" class="form-label">Name:</label>
+                        </div>
+                        <label for="subject" class="form-label">Subject:</label>
+                        <select name="subject" id="subject" class="form-select" selected="default">
+                            <option value="default">Default</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="form-floating my-4">
+                            <textarea name="query" id="query" style="height: 200px;" class="form-control" placeholder="Message goes here."></textarea>
+                            <label for="query">Message:</label>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+          <span class="text-light">Place sticky footer content here.</span>
+        </div>
+      </footer>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
